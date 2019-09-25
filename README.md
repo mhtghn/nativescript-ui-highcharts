@@ -13,8 +13,8 @@ This plugins allows you to use Highcharts in NativeScript.
 Check out the [demo](/demo) folder. This is how to clone and run it:
 
 ```bash
-git clone https://github.com/mhtghn/nativescript-highcharts
-cd nativescript-highcharts/src
+git clone https://github.com/mhtghn/nativescript-ui-highcharts
+cd nativescript-ui-highcharts/src
 npm run demo.ios # or demo.android
 ```
 
@@ -22,8 +22,8 @@ npm run demo.ios # or demo.android
 Check out the [demo-angular](/demo-angular) folder. This is how to clone and run it:
 
 ```bash
-git clone https://github.com/mhtghn/nativescript-highcharts
-cd nativescript-highcharts/src
+git clone https://github.com/mhtghn/nativescript-ui-highcharts
+cd nativescript-ui-highcharts/src
 npm run demo-angular.ios # or demo-angular.android
 ```
 
@@ -31,7 +31,7 @@ npm run demo-angular.ios # or demo-angular.android
 
 
 ```javascript
-tns plugin add nativescript-highcharts
+tns plugin add nativescript-ui-highcharts
 ```
 
 ## Usage 
@@ -110,7 +110,7 @@ export class HomeViewModel extends Observable {
 ```xml
 <Page class="page"
     navigatingTo="onNavigatingTo"
-    xmlns="http://schemas.nativescript.org/tns.xsd"  xmlns:ui="nativescript-highcharts">
+    xmlns="http://schemas.nativescript.org/tns.xsd"  xmlns:ui="nativescript-ui-highcharts">
 
     <ActionBar class="action-bar">
         <Label class="action-bar-title" text="Home"></Label>
@@ -130,7 +130,7 @@ export class HomeViewModel extends Observable {
 Import the HighchartsModule in your module.
 ```typescript
 ...
-import {HighchartsModule} from "nativescript-highcharts";
+import {HighchartsModule} from "nativescript-ui-highcharts";
 
 @NgModule({
     imports: [

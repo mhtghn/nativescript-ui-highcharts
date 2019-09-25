@@ -1,5 +1,5 @@
 {
-	"name": "nativescript-highcharts",
+	"name": "nativescript-ui-highcharts",
 	"version": "1.0.0",
 	"description": "This plugins allows you to use Highcharts in NativeScript.",
 	"main": "highcharts",
@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/mhtghn/nativescript-highcharts.git"
+		"url": "https://github.com/mhtghn/nativescript-ui-highcharts.git"
 	},
 	"scripts": {
 		"tsc": "npm i && tsc",
@@ -27,7 +27,7 @@
 		"demo-angular.ios": "npm run tsc && cd ../demo-angular && tns run ios",
 		"demo-angular.android": "npm run tsc && cd ../demo-angular && tns run android",
 		"demo-angular.reset": "cd ../demo-angular && npx rimraf -- hooks node_modules platforms package-lock.json",
-		"plugin.prepare": "npm run build && cd ../demo && tns plugin remove nativescript-highcharts && tns plugin add ../src && cd ../demo-angular && tns plugin remove nativescript-highcharts && tns plugin add ../src",
+		"plugin.prepare": "npm run build && cd ../demo && tns plugin remove nativescript-ui-highcharts && tns plugin add ../src && cd ../demo-angular && tns plugin remove nativescript-ui-highcharts && tns plugin add ../src",
 		"clean": "npm run demo.reset && npm run demo-angular.reset && npx rimraf -- node_modules package-lock.json && npm i"
 	},
 	"keywords": [
@@ -43,10 +43,10 @@
 		"email": "mhtghn@gmail.com"
 	},
 	"bugs": {
-		"url": "https://github.com/mhtghn/nativescript-highcharts/issues"
+		"url": "https://github.com/mhtghn/nativescript-ui-highcharts/issues"
 	},
 	"license": "Apache-2.0",
-	"homepage": "https://github.com/mhtghn/nativescript-highcharts",
+	"homepage": "https://github.com/mhtghn/nativescript-ui-highcharts",
 	"devDependencies": {
 		"tns-core-modules": "^6.0.0",
 		"tns-platform-declarations": "^6.0.0",
