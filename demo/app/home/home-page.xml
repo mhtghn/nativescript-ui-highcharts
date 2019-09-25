@@ -1,0 +1,13 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"
+    xmlns="http://schemas.nativescript.org/tns.xsd"  xmlns:ui="nativescript-highcharts">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Home"></Label>
+    </ActionBar>
+
+    <GridLayout>
+        <!-- Add your page content here -->
+        <ui:Highcharts options="{{chartOptionsString}}"></ui:Highcharts>
+    </GridLayout>
+</Page>
