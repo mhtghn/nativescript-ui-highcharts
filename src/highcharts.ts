@@ -1,5 +1,6 @@
 import {Property, View} from "tns-core-modules/ui/core/view";
 import {FlexboxLayout} from "tns-core-modules/ui/layouts/flexbox-layout";
+import {WebView, LoadEventData} from "tns-core-modules/ui/web-view";
 
 let builder = require('tns-core-modules/ui/builder');
 
@@ -731,6 +732,21 @@ export class Highcharts extends FlexboxLayout {
         innerComponent.bindingContext = this;
 
         this.addChild(innerComponent);
+    }
+
+    onWebViewLoaded(webargs) {
+        const webview: WebView = <WebView> webargs.object;
+        webview.on(WebView.loadFinishedEvent, (args: LoadEventData) => {
+            if (webview.android) {
+                webview.android.getSettings().setBuiltInZoomControls(false);
+                webview.android.getSettings().setDisplayZoomControls(false);
+            } else {
+                webview.ios.scrollView.minimumZoomScale = 1.0;
+                webview.ios.scrollView.maximumZoomScale = 1.0;
+                webview.ios.scalesPageToFit = false;
+                webview.ios.scrollView.bounces = false;
+            }
+        });
     }
 }
 
