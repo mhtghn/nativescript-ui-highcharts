@@ -13,7 +13,7 @@ export const optionsProperty = new Property<Highcharts, string>({
                 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
             </head>
             <html>
-            <body>
+            <body style="width: 100%; height: 100%; margin: 0; padding: 0;">
             <script>
             /* Highcharts JS v7.2.0 (2019-09-03) (c) 2009-2018 Torstein Honsi License: www.highcharts.com/license */
             (function(P,N){"object"===typeof module&&module.exports?(N["default"]=N,module.exports=P.document?N(P):N):"function"===typeof define&&define.amd?define("highcharts/highcharts",function(){return N(P)}):(P.Highcharts&&P.Highcharts.error(16,!0),P.Highcharts=N(P))})("undefined"!==typeof window?window:this,function(P){function N(c,n,A,D){c.hasOwnProperty(n)||(c[n]=D.apply(null,A))}var H={};N(H,"parts/Globals.js",[],function(){var c="undefined"!==typeof P?P:"undefined"!==typeof window?window:{},n=c.document,
@@ -716,7 +716,7 @@ export const optionsProperty = new Property<Highcharts, string>({
             this.backFrame.front.attr({fill:this.backFrame.color}))}))});B(u,"masters/highcharts-3d.src.js",[],function(){})});
             //# sourceMappingURL=highcharts-3d.js.map
             </script>
-            <div id="container" style="width: 100%; height: 100%; margin: 0"></div>
+            <div id="container"></div>
             <script>
             Highcharts.chart('container', ${value});
             </script>
