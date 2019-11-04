@@ -740,11 +740,15 @@ export class Highcharts extends FlexboxLayout {
             if (webview.android) {
                 webview.android.getSettings().setBuiltInZoomControls(false);
                 webview.android.getSettings().setDisplayZoomControls(false);
+                webview.android.setBackgroundColor(0x00000000);
+                webview.android.setLayerType(android.view.View.LAYER_TYPE_SOFTWARE, null);
             } else {
                 webview.ios.scrollView.minimumZoomScale = 1.0;
                 webview.ios.scrollView.maximumZoomScale = 1.0;
                 webview.ios.scalesPageToFit = false;
                 webview.ios.scrollView.bounces = false;
+                webview.ios.backgroundColor = UIColor.clearColor;
+                webview.ios.opaque = false;
             }
         });
     }
