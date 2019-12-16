@@ -16,6 +16,9 @@ This plugins allows you to use Highcharts in NativeScript.
 ![Demo IOS](./media/demo-ios-3.png) &nbsp;&nbsp;&nbsp;&nbsp;
 ![Demo Android](./media/demo-android-3.png)
 
+![Demo IOS](./media/demo-ios-4.png) &nbsp;&nbsp;&nbsp;&nbsp;
+![Demo Android](./media/demo-android-4.png)
+
 ## Demo apps
  
 ### NativeScript-Core (XML)
@@ -243,9 +246,19 @@ export class HomeComponent implements OnInit {
 * highcharts.js: v7.2.0
 * highcharts-more.js: v7.2.0
 * highcharts-3d.js: v7.2.0
+* sankey.js: v7.2.0
+* organization.js: v7.2.0
 
 ## About performance
 This plugin is addressed to people who really want to use Highcharts in their NS apps. Because it uses a WebView to display the chart. So performance-wise it is not the best solution. If you want a pure native solution you should use [NativeScript UI's Chart component](https://docs.nativescript.org/ui/components/Chart/overview)
+
+## Tips
+* Add the next option to the chart options to disable the display of the Highcharts.com Hyperlink in the webview
+    ```javascript
+    credits: {
+       enabled: false
+    }
+    ```
 
 ## Credit
 This plugin is greatly inspired by [this demo](https://github.com/EddyVerbruggen/nativescripthighcharts) from [Eddy Verbruggen](https://github.com/EddyVerbruggen)
