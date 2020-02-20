@@ -157,7 +157,7 @@ export class HomeViewModel extends Observable {
 Import the HighchartsModule in your module.
 ```typescript
 ...
-import {HighchartsModule} from "nativescript-ui-highcharts";
+import {HighchartsModule} from "nativescript-ui-highcharts/angular";
 
 @NgModule({
     imports: [

@@ -768,7 +768,7 @@ export const optionsProperty = new Property<Highcharts, string>({
 export class Highcharts extends FlexboxLayout {
     constructor() {
         super();
-        let innerComponent = builder.parse(<string>require(__dirname + '/highcharts.xml')) as View;
+        let innerComponent = builder.parse(<string>require('./highcharts.xml')) as View;
         innerComponent.bindingContext = this;
 
         this.addChild(innerComponent);
