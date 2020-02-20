@@ -8,9 +8,6 @@
   <a href="https://github.com/mhtghn/nativescript-ui-highcharts/blob/master/LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/license-Apache-blue.svg" target="_blank" />
   </a>
-  <a href="https://twitter.com/mhtghn">
-    <img alt="Twitter: mhtghn" src="https://img.shields.io/twitter/follow/mhtghn.svg?style=social" target="_blank" />
-  </a>
 </p>
 
 [![NPM](https://nodei.co/npm/nativescript-ui-highcharts.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/nativescript-ui-highcharts/)
