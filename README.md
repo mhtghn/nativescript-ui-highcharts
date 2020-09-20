@@ -1,5 +1,7 @@
 # NativeScript Highcharts
 
+> :warning: **If you are using NativeScript 7.0.0 and above**: Use this package [@mhtghn/nativescript-highcharts](https://www.npmjs.com/package/@mhtghn/nativescript-highcharts) 
+
 <p align="center">
   <img src="https://img.shields.io/npm/v/nativescript-ui-highcharts.svg?orange=blue" />
   <a href="https://www.npmjs.com/package/nativescript-ui-highcharts">
