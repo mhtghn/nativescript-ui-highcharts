@@ -24,3 +24,10 @@ publish/package
 demo/report/report.html
 demo/report/stats.json
 !demo-vue/app/app.js
+
+# aot
+**/*.ngfactory.ts
+**/*.ngsummary.json
+**/*.ngsummary.ts
+**/*.shim.ngstyle.ts
+**/*.metadata.json
